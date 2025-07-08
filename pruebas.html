@@ -1,0 +1,41 @@
+<p><span style="background-color:rgb(255,255,255);color:rgb(71,71,71);font-size:14px;">📞</span><strong> &nbsp;‪+57 (31) 1240 - 5452</strong></p><p><span style="background-color:rgb(255,255,255);color:rgb(71,71,71);font-size:14px;">✉️ j</span><strong>ason@evobike.com.mx</strong></p>
+<style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-icon {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+<div class="whatsapp-float" onclick="openWhatsApp()">
+    <img class="whatsapp-icon" src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/whatsapp.svg" alt="WhatsApp">
+  </div>
+
+  <script>
+    function openWhatsApp() {
+      const phoneNumber = "573112405452";
+      const message = encodeURIComponent("¡Hola! Me gustaría conocer más sobre sus productos.");
+      const url = `https://wa.me/${phoneNumber}?text=${message}`;
+      window.open(url, "_blank");
+    }
+  </script>
